@@ -327,7 +327,7 @@ class FlexibleSurvey extends React.Component {
             console.error("failed to create the question object from the json");
             return null;
         }
-        Survey.JsonObject.prototype.toObject(questionJson, question);
+        new Survey.JsonObject().toObject(questionJson, question);
         return question;
     }
 
